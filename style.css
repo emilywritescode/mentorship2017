@@ -5,26 +5,30 @@ body{ margin: 0 auto; height: 100%;}
 h1, h2, h3, h4, h5, h6, p, a{ font-family: 'Happy Monkey'; padding: 20px; line-height: 0.5em;}
 
 a{text-decoration: none;}
+li{ list-style: none; }
 
 /***TOP SECTION***/
 .top{ display: block; background-color: rgb(89, 186, 183); width: 100%; position: absolute; height: 100vh}
 .name{ text-align: center; font-weight: bold; font-size: 50px; color: white; padding-top: 200px;}
 .byline{ text-align: center; font-weight: bold; font-size: 25px; color: white}
-.arrowdown{ width: 100px; height: 70px; background-color: rgb(50, 50, 50); display: block; position: absolute; bottom: 0px; right: 5%; text-align: center; padding: 10px;}
+.arrowdown{ width: 100px; height: 70px; background-color: rgb(50, 50, 50); display: block; position: absolute; bottom: 0px; right: 5%; text-align: center; padding: 10px; border-top-left-radius: 10px; border-top-right-radius: 10px;}
 #arrow{ color: white; font-size: 50px; font-family: 'Happy Monkey'; font-weight: bold; animation: bob 2s linear infinite; position: relative; top: 1px; display: inline-block;}
 
 /***NAVIGATION BAR***/
-.navigation{ width: 60px; height: 150px; background-color: orange; position: fixed;}
-.nav{ list-style-type: none; padding-left: 0;}
+.navigation{ background-color: black; position: absolute; top: 100%; right: 5%; width: 120px; text-align: center;}
 
-
+.nav{display: inline-block; margin: 0px; padding: 0px; }
+.nav li{display: inline-block; width: 100%; }
+.nav li a{ display: inline-block; color: white; padding: 0px; padding-top: 30px; padding-bottom: 30px; }
+.nav li a:hover{ color: rgb(200, 200, 200); }
+.nav li a:active{ color: rgb(89, 186, 183); }
 
 @keyframes bob{
     0%{
         padding-top: 15px;
     }
     50%{
-        padding-top: 25px;
+        padding-top: 30px;
     }
     100%{
         padding-top: 15px;
