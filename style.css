@@ -1,23 +1,24 @@
 html{}
 
-body{ margin: 0px; padding: 0px; border:0px}
+body{ margin: 0px; padding: 0px; border:0px;}
 
-h1, h2, h3, h4, h5, h6, p, a{ font-family: 'Happy Monkey'; padding: 20px;}
+h1, h2, h3, h4, h5, h6, p, a{ font-family: 'Happy Monkey'; padding: 0px; margin: 0px; line-height: 1;}
 
 a{text-decoration: none;}
 li{ list-style: none; }
-div{}
-.title{text-align: center;}
+
+.title{text-align: center; padding-top: 2000px; font-size: 50px;}
 
 /***TOP SECTION***/
-#top{display: inline-block; background: rgb(89, 186, 183); width: 100%; height: 100vh;}
-#name{ text-align: center; font-weight: bold; font-size: 100px; color: white; padding-top: 100px;}
+#top{top: 0px; background: rgb(89, 186, 183); width: 100%; height: 100vh; display: block;}
+#name{ text-align: center; font-weight: bold; font-size: 100px; color: white; padding-top: 250px; padding-bottom: 50px;}
 #byline{ text-align: center; font-weight: bold; font-size: 25px; color: white}
-.arrowdown{ width: 100px; height: 70px; background-color: rgb(50, 50, 50); display: block; position: absolute; bottom: 0px; right: 5%; text-align: center; padding: 10px; border-top-left-radius: 10px; border-top-right-radius: 10px;}
-#arrow{ color: white; font-size: 50px; font-family: 'Happy Monkey'; font-weight: bold; animation: bob 2s linear infinite; position: relative; top: 1px; display: inline-block;}
+.arrowdown{ width: 100px; height: 70px; background-color: rgb(50, 50, 50); display: block; position: absolute; bottom: 0px; right: 5%; text-align: center; padding: 10px;}
+#arrow{ color: white; font-size: 50px; font-family: 'Happy Monkey'; font-weight: bold; animation: bob 2s linear infinite; display: inline-block;}
 
 /***NAVIGATION BAR***/
-#navigation{ background-color: rgb(50, 50, 50); position: absolute; top: 100%; right: 5%; width: 120px; text-align: center; }
+.navigation{position: absolute; right: 5%; background-color: rgb(50, 50, 50); width: 120px; text-align: center; }
+.fixed-nav{position: fixed; top: 60px; right: 5%; background-color: rgb(50, 50, 50); width: 120px; text-align: center; }
 .nav{display: inline-block; margin: 0px; padding: 0px; }
 .nav li{display: inline-block; width: 100%; }
 .nav li a{ display: inline-block; color: white; padding: 0px; padding-top: 30px; padding-bottom: 30px; width: 100%}
@@ -25,19 +26,20 @@ div{}
 .nav .active, .nav li a:focus{ background-color: rgb(89, 186, 183);}
 
 /***PROFILE***/
-#profile{display: inline-block; background-color: white; width: 100%;}
+#profile{display: block; background-color: white; width: 100%;}
+
 
 
 
 
 @keyframes bob{
     0%{
-        padding-top: 15px;
+        padding-top: 0px;
     }
     50%{
-        padding-top: 30px;
+        padding-top: 20px;
     }
     100%{
-        padding-top: 15px;
+        padding-top: 0px;
     }
 }
