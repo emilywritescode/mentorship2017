@@ -8,23 +8,27 @@
     <script src="index.js"></script>
 </head>
 <body>
-    <div class="top">
-        <h1 class="name"><!--name goes here-->Name</h1>
-        <p class="byline">Interactive Resume</p>
-        <div class="arrowdown"><a href="#profile" id="arrow">v</a></div>
+    <div id="top">
+        <div id="top-content">
+            <h1 id="name"><!--name goes here-->Name</h1>
+            <p id="byline">Interactive Resume</p>
+            <div class="arrowdown"><a href="#profile" id="arrow">v</a></div>
+        </div>
     </div>
     
-    <div class="navigation">
+    <div id="navigation">
         <ul class="nav">
-            <li><a href="#profile">Profile</a></li>
-            <li><a href="#experiences">Experiences</a></li>
-            <li><a href="#abilities">Abilities</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li></li>
+            <li class="active"><a href="#profile">Profile</a></li>
+            <li class><a href="#experiences">Experiences</a></li>
+            <li class><a href="#abilities">Abilities</a></li>
+            <li class><a href="#projects">Projects</a></li>
+            <li class><a href="#contact">Contact</a></li>
         </ul>
     </div>
     
-    
+    <div id="profile">
+        <h1 class="title">Profile</h1>
+    </div>
     
 </body>
 </html>
