@@ -1,34 +1,55 @@
 html{}
 
-body{ margin: 0px; padding: 0px; border:0px;}
+body{ margin: 0px; padding: 0px; border:0px; }
 
-h1, h2, h3, h4, h5, h6, p, a{ font-family: 'Happy Monkey'; padding: 0px; margin: 0px; line-height: 1;}
+h1, h2, h3, h4, h5, h6, p, a{ font-family: 'Happy Monkey'; padding: 0px; margin: 0px; line-height: 1.25em; }
 
-a{text-decoration: none;}
+a{ text-decoration: none; }
+
 li{ list-style: none; }
 
-.title{text-align: center; padding-top: 2000px; font-size: 50px;}
+p{font-family: 'Open Sans', sans-serif; }
 
-/***TOP SECTION***/
-#top{top: 0px; background: rgb(89, 186, 183); width: 100%; height: 100vh; display: block;}
-#name{ text-align: center; font-weight: bold; font-size: 100px; color: white; padding-top: 250px; padding-bottom: 50px;}
-#byline{ text-align: center; font-weight: bold; font-size: 25px; color: white}
-.arrowdown{ width: 100px; height: 70px; background-color: rgb(50, 50, 50); display: block; position: absolute; bottom: 0px; right: 5%; text-align: center; padding: 10px;}
-#arrow{ color: white; font-size: 50px; font-family: 'Happy Monkey'; font-weight: bold; animation: bob 2s linear infinite; display: inline-block;}
+div{display: block;}
+
+.title{ text-align: center;  padding-bottom: 25px; font-size: 75px; font-weight: 100; color: rgb(89, 186, 183); }
+
+
+/***TOP OF EACH SECTION***/
+.subtitle{ padding: 10px; text-align: center; color: rgb(50, 50, 50); font-size: 25px; font-weight: 100; margin-bottom: 20px;}
+hr{ width: 700px; overflow: hidden; margin-bottom: 50px;}
+
+
+/***SUBSECTIONS***/
+#center{ max-width: 700px; margin-left: auto; margin-right: auto; text-align: center;}
+.subsection{width:30%; position: relative; display: inline-block;}
+.subsection-title{ color: rgb(89, 186, 183); font-size: 25px; padding-bottom: 20px; vertical-align: top; text-align: left;}
+
+
+/***LANDING TOP***/
+#top{ top: 0px; background: rgb(89, 186, 183); width: 100%; height: 100vh; display: block; }
+#name{ text-align: center; font-weight: bold; font-size: 100px; color: white; padding-top: 250px; padding-bottom: 50px; }
+#byline{ text-align: center; font-family: 'Open Sans', sans-serif; font-weight: bold; font-size: 25px; color: white; }
+.arrowdown{ width: 100px; height: 70px; background-color: rgb(50, 50, 50); display: block; position: absolute; bottom: 0px; right: 5%; text-align: center; padding: 10px; }
+#arrow{ color: white; font-size: 50px; font-family: 'Bubbler One'; font-weight: bold; animation: bob 2s linear infinite; display: inline-block; }
+
 
 /***NAVIGATION BAR***/
-.navigation{position: absolute; right: 5%; background-color: rgb(50, 50, 50); width: 120px; text-align: center; }
-.fixed-nav{position: fixed; top: 60px; right: 5%; background-color: rgb(50, 50, 50); width: 120px; text-align: center; }
-.nav{display: inline-block; margin: 0px; padding: 0px; }
-.nav li{display: inline-block; width: 100%; }
-.nav li a{ display: inline-block; color: white; padding: 0px; padding-top: 30px; padding-bottom: 30px; width: 100%}
+.navigation{ position: absolute; right: 5%; background-color: rgb(50, 50, 50); width: 120px; text-align: center; }
+.fixed-nav{ position: fixed; top: 60px; right: 5%; background-color: rgb(50, 50, 50); width: 120px; text-align: center; }
+.nav{ display: inline-block; margin: 0px; padding: 0px; }
+.nav li{ display: inline-block; width: 100%; }
+.nav li a{ display: inline-block; color: white; padding: 0px; padding-top: 30px; padding-bottom: 30px; font-family: 'Open Sans', sans-serif; font-weight: 700; width: 100%; }
 .nav li a:hover{ color: rgb(200, 200, 200); }
-.nav .active, .nav li a:focus{ background-color: rgb(89, 186, 183);}
+.nav .active, .nav li a:focus{ background-color: rgb(89, 186, 183); }
+
 
 /***PROFILE***/
-#profile{display: block; background-color: white; width: 100%;}
-
-
+#profile{ background-color: white; width: 100%; padding-top: 60px; padding-bottom: 60px; }
+#about-me{ vertical-align: top; text-align: left;}
+#profile-pic { text-align: center; padding-left: 30px; padding-right: 30px; }
+#profile-pic img {vertical-align: top; width: 150px; height: 150px;}
+#details{ vertical-align: top; text-align: left;}
 
 
 
