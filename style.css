@@ -6,7 +6,7 @@ h1, h2, h3, h4, h5, h6, p, a{ font-family: 'Happy Monkey'; padding: 0px; margin:
 
 a{ text-decoration: none; }
 
-li{ list-style: none; }
+ul{ list-style: none; padding: 0; font-family: 'Open Sans', sans-serif;}
 
 p{font-family: 'Open Sans', sans-serif; }
 
@@ -17,12 +17,14 @@ div{display: block;}
 
 /***TOP OF EACH SECTION***/
 .subtitle{ padding: 10px; text-align: center; color: rgb(50, 50, 50); font-size: 25px; font-weight: 100; margin-bottom: 20px;}
-hr{ width: 700px; overflow: hidden; margin-bottom: 50px;}
+hr{ width: 700px; overflow: hidden; margin-bottom: 50px; opacity: 0.5;}
 
 
 /***SUBSECTIONS***/
 .center{ max-width: 700px; margin-left: auto; margin-right: auto; text-align: center;}
 .subsection-title{ color: rgb(89, 186, 183); font-size: 30px; padding-bottom: 20px; vertical-align: top; text-align: left;}
+.col1{display: inline-block; vertical-align: top; text-align: left; margin:0 auto; padding-top: 10px; padding-bottom: 10px;}
+.col2{display: inline-block; vertical-align: top; text-align: left; margin:0 auto; padding-top: 10px; padding-bottom: 10px;}
 
 
 
@@ -55,12 +57,16 @@ hr{ width: 700px; overflow: hidden; margin-bottom: 50px;}
 /***EXPERIENCES***/
 #experiences {background-color: #F3EFE0; width: 100%; padding-top: 60px; padding-bottom: 60px; }
 .row{ margin-bottom: 50px; text-align: center; font-family: 'Open Sans', sans-serif;}
-.col1{ display: inline-block; vertical-align: top; text-align: left; width:40%; margin:0 auto; padding-top: 10px; padding-bottom: 10px;}
-.col2{ display: inline-block; vertical-align: top; text-align: left; width:60%; margin:0 auto; padding-top: 10px; padding-bottom: 10px; }
+#experiences .col1{ width:40%; }
+#experiences .col2{ width:60%; }
 .exp{ font-family: 'Open Sans', sans-serif; font-weight: 700; font-size: 20px; padding-bottom: 10px; text-align: left; }
 .date { margin-top: 10px; text-align: left; }
 
-
+/***ABILITIES***/
+#abilities {background-color: #FFFFFF; width: 100%; padding-top: 60px; padding-bottom: 60px; }
+#abilities .col1 {width: 50%; }
+#abilities .col2 {width: 50%; }
+#abilities li:hover { background-color: #F2F2F2;}
 
 
 @keyframes bob{
