@@ -6,18 +6,18 @@ h1, h2, h3, h4, h5, h6, p, a{ font-family: 'Happy Monkey'; padding: 0px; margin:
 
 a{ text-decoration: none; }
 
-ul{ list-style: none; padding: 0; font-family: 'Open Sans', sans-serif;}
+ul{ list-style: none; font-family: 'Open Sans', sans-serif; margin:0; padding:0;}
 
 p{font-family: 'Open Sans', sans-serif; }
 
 div{display: block;}
 
-.title{ text-align: center;  padding-bottom: 25px; font-size: 75px; font-weight: 100; color: rgb(89, 186, 183); }
+h1.title{ text-align: center;  padding-bottom: 25px; font-size: 75px; font-weight: 100; color: rgb(89, 186, 183); }
 
 
 /***TOP OF EACH SECTION***/
-.subtitle{ padding: 10px; text-align: center; color: rgb(50, 50, 50); font-size: 25px; font-weight: 100; margin-bottom: 20px;}
-hr{ width: 700px; overflow: hidden; margin-bottom: 50px; opacity: 0.5;}
+h2.subtitle{ padding: 10px; text-align: center; color: rgb(50, 50, 50); font-size: 25px; font-weight: 100; }
+hr{ width: 700px; overflow: hidden; margin-top: 50px; margin-bottom: 50px; opacity: 0.25;}
 
 
 /***SUBSECTIONS***/
@@ -59,16 +59,44 @@ hr{ width: 700px; overflow: hidden; margin-bottom: 50px; opacity: 0.5;}
 .row{ margin-bottom: 50px; text-align: center; font-family: 'Open Sans', sans-serif;}
 #experiences .col1{ width:40%; }
 #experiences .col2{ width:60%; }
-.exp{ font-family: 'Open Sans', sans-serif; font-weight: 700; font-size: 20px; padding-bottom: 10px; text-align: left; }
+h4.exp{ font-family: 'Open Sans', sans-serif; font-weight: 700; font-size: 20px; padding-bottom: 10px; text-align: left; }
 .date { margin-top: 10px; text-align: left; }
 
 /***ABILITIES***/
 #abilities {background-color: #FFFFFF; width: 100%; padding-top: 60px; padding-bottom: 60px; }
-#abilities .col1 {width: 50%; }
-#abilities .col2 {width: 50%; }
-#abilities li:hover { background-color: #F2F2F2;}
+#abilities .col1, #abilities .col2 { position: relative; display: inline-block; width: 45%; }
+#abilities .col1{ padding-right: 5%; }
+#abilities .col2 { padding-left: 5%; }
+#abilities ul li { min-height: 30px;}
+#abilities ul li:hover { background: #F2F2F2;}
+#abilities ul li:hover .stars i {padding: 2px;}
+#abilities ul li .stars i {transition: .5s;}
+.ability-name{ width: 60%;  text-align: left; font-size:18px; vertical-align: middle;}
+.stars { float: right; }
+.stars i { font-size: 18px; text-align: center; vertical-align: middle;}
+.material-icons.fill{color:rgb(89, 186, 183);}
+.material-icons.no-fill {color: lightgrey;}
+
+/***PROJECTS***/
+#projects {background-color: #F3EFE0; width: 100%; padding-top: 60px; padding-bottom: 60px; }
+#projects .col1{ width: 45%; padding: 0px; padding-right: 5%; }
+#projects .col2{ width: 45%; padding: 0px; padding-left: 5%;}
+#projects figure { margin:0; height: 100%; width: 100%; position: relative; overflow: hidden;  background-color: rgb(89, 186, 183) }
+#projects figure img.project{ width: 110%; padding:0px; display: block; }
+#projects figure figcaption{ position: absolute; top:0; left: 0; width: 100%; height: 100%; padding:0; margin:0; }
+#projects figure h4{ font-family: 'Open Sans', sans-serif; font-size: 25px; margin-top: 75px; color: white; padding-left: 25px; opacity: 0;}
+#projects figure p{ color: white; padding-left: 25px; margin-top: 30px; opacity: 0; transition: opacity 0.5s, transform 0.2s; transform: translate3d(100%,0,0);}
+#projects figure a{ height: 100%; width: 100%; font-size: 0; white-space: nowrap; position: absolute; top: 0; left:0; }
+#projects figure figcaption i{ display: inline-block; position: absolute; top: 0; right: 0; color: white; background-color: rgb(89, 186, 183); font-size: 40px; padding: 10px;}
+
+/*PROJECTS EFFECT ON HOVER*/
+#projects figure:hover img.project{ transition: transform; transform:translate3d(-10px, 0, 0); opacity: 0.2;}
+#projects figure:hover figcaption h4{ opacity: 1;}
+#projects figure:hover figcaption p {opacity:1; transform: translate3d(0,0,0); }
 
 
+
+/***Animation for top arrow***/
 @keyframes bob{
     0%{
         padding-top: 0px;
