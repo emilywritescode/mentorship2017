@@ -23,6 +23,7 @@ hr{ width: 700px; overflow: hidden; margin-top: 50px; margin-bottom: 50px; opaci
 /***SUBSECTIONS***/
 .center{ max-width: 700px; margin-left: auto; margin-right: auto; text-align: center;}
 .subsection-title{ color: rgb(89, 186, 183); font-size: 30px; padding-bottom: 20px; vertical-align: top; text-align: left;}
+.row{ margin-bottom: 50px; text-align: center; font-family: 'Open Sans', sans-serif;}
 .col1{display: inline-block; vertical-align: top; text-align: left; margin:0 auto; padding-top: 10px; padding-bottom: 10px;}
 .col2{display: inline-block; vertical-align: top; text-align: left; margin:0 auto; padding-top: 10px; padding-bottom: 10px;}
 
@@ -56,7 +57,6 @@ hr{ width: 700px; overflow: hidden; margin-top: 50px; margin-bottom: 50px; opaci
 
 /***EXPERIENCES***/
 #experiences {background-color: #F3EFE0; width: 100%; padding-top: 60px; padding-bottom: 60px; }
-.row{ margin-bottom: 50px; text-align: center; font-family: 'Open Sans', sans-serif;}
 #experiences .col1{ width:40%; }
 #experiences .col2{ width:60%; }
 h4.exp{ font-family: 'Open Sans', sans-serif; font-weight: 700; font-size: 20px; padding-bottom: 10px; text-align: left; }
@@ -93,6 +93,19 @@ h4.exp{ font-family: 'Open Sans', sans-serif; font-weight: 700; font-size: 20px;
 #projects figure:hover img.project{ transition: transform; transform:translate3d(-10px, 0, 0); opacity: 0.2;}
 #projects figure:hover figcaption h4{ opacity: 1;}
 #projects figure:hover figcaption p {opacity:1; transform: translate3d(0,0,0); }
+
+/***CONTACT***/
+#contact {background-color: #434242; height: 100vh; width: 100%; padding-top: 60px;}
+#contact .col1, #contact .col2 { position: relative; display: inline-block; width: 49%; }
+#contact .col1{ padding-right: 1%; }
+#contact .col2 { padding-left: 1%; }
+#contact h1 { color: white; }
+#contact h2, #contact a { color: rgb(114,120,120); }
+#contact li { line-height: 60px;}
+#contact a.social { font-family: 'Open Sans', sans-serif; vertical-align: middle; vertical-align: middle; display: inlin;}
+#contact a.social img {width: 48px; height:48px; display: inline-block; margin-right: 10px; vertical-align: middle;}
+#contact a.social:hover { color: white; }
+#contact p {margin-left: 10px; display: inline-block; color: white;}
 
 
 
