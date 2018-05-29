@@ -1,6 +1,6 @@
 Created 2017.
 
-View here: http://output.jsbin.com/zaxifozafe/1
+View here: http://emilywritescode.github.io/mentorship2017-website1
 
 Website to replicate: http://www.pascalvangemert.nl
 
