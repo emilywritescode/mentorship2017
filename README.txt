@@ -1,6 +1,6 @@
 Created 2017.
 
-View here: http://emilylime.github.io/mentorship2017-website1
+View here: http://emilyylime.github.io/mentorship2017-website1
 
 Website to replicate: http://www.pascalvangemert.nl
 
